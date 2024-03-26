@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script src="../dist/react/index.cjs.js"></script>
+  </head>
+  <body>
+    <div id="bench"></div>
+
+    <script>
+      var bench = document.getElementById('bench');
+
+      if (window.Wysimark && typeof window.Wysimark.useEditor === 'function') {
+        bench.innerHTML = 'Wysimark is loaded';
+      } else {
+        bench.innerHTML = 'Wysimark is not loaded';
+      }
+    </script>
+  </body>
+</html>
